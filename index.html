@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Ты не одна</title>
+</head>
+<body>
+<header class="header container">
+
+    <div class="mobile menu" id="menu">
+        <img src="img/common/Union.svg" id="menu__closed" class="menu__closed" alt="menu">
+        <img src="img/common/close.svg" class="menu__opened hide" alt="close"/>
+    </div>
+<a class="header__logo " href="index.html">
+    <img src="img/common/logo.svg"  alt="logo"/>
+
+    <div class="logo__text">
+        <p class="logo__title">Ты не одна</p>
+        <span class="logo__subtitle">Портал помощи матерям и женам зависимых</span>
+    </div>
+</a>
+    <nav class="header__navigation">
+        <ul class="header__navigation-list">
+            <li > <a href="rehabs.html">Реабилитационные центры</a></li>
+            <li><a href="article.html">Наркомания</a></li>
+            <li> <a href="contacts.html">Алкоголизм</a></li>
+            <li> <a href="service.html">Лечение</a></li>
+            <li><a href="groups.html">Группы взаимопомощи</a></li>
+            <li class="main-nav__item"> <a class="main-nav-sub main-nav__link"> <span>Публикации</span> <div class="plus"></div> </a>
+                <ul class="main-nav__sublist hide">
+                    <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="publishes.html">Героин</a>
+                    </li>
+                    <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="rehab.html">Альфа-ПВП</a>
+                    </li>
+                    <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="specialist.html">Мефедрон</a>
+                    </li>
+                    <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="allServices.html">Соль</a>
+                    </li>
+                    <li class="main-nav__subitem">
+                        <a class="main-nav__sublink" href="comment.html">Соль</a>
+                    </li>
+                </ul></li>
+            <li><a href="about.html"> О портале</a></li>
+        </ul>
+    </nav>
+    <div class="mobile header__phone-mobile">
+        <img src="img/common/phone.svg" alt="call"/>
+    </div>
+    <div class="header__phone">
+        <a class="header__phone-number" href="tel:899934523232">8 0000 000 00 00</a>
+        <span class="header__phone-description">
+            Анонимная, бесплатная помощь 24/7
+        </span>
+    </div>
+</header>
+<main>
+    <div class="overlay"></div>
+    <div class="mobile bottom-banner">
+        <div>
+            <p class="text bottom-banner__text">Получи помощь сейчас!</p>
+            <p class="text bottom-banner__strong-text">Бесплатно. Анонимно.</p>
+        </div>
+        <a class="button"><span>8 800 000 00 00</span></a>
+    </div>
+    <div class="first-block container">
+        <div class="first-block__text-side">
+            <p class="first-block__subtitle green-text">Портал помощи</p>
+            <p class="first-block__title h3">Матерям и женам зависимых</p>
+            <p class="first-block__text text"> Мы знаем как спасти вашего близкого Всё, что от вас требуется — это точно
+                соблюдать рекомендации.</p>
+            <p class="first-block__text text">Наши специалисты помогут в самой трудной ситуации. Все консультации
+                полностью <span class="first-block__strong-text">анонимные и бесплатные.</span></p>
+            <a class="first-block__button button green-button js-modal-callback">
+                Мне нужна помощь!
+            </a>
+            <div class="modal modal-callback">
+                <div class="modal-callback__title  access-mod ">
+                    Ваша заявка принята!
+                </div>
+                <p class="green-text subtitle">Получите помощь</p>
+                <p class="title  h3 modal-callback__title">Oставить анонимную заявку</p>
+                <p class="text">Заявки принимаются бесплатно и круглосуточно.</p>
+                <p class="text">Мы свяжемся с вами в течение дня</p>
+                <form class="modal-form">
+                    <input placeholder="+7 (__ __ __) __ __ - __ __ - __ __" class="modal__input-phone"/>
+                    <textarea placeholder="Опишите проблему" class="mobile"></textarea>
+                    <input placeholder="Опишите проблему" class="desk"/>
+                    <a class="button green-button access-click">Отправить</a>
+                </form>
+                <svg class="modal__close" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.44445 25.8889L12.8889 14.4444L24.4444 26L25.8889 24.5556L14.3333 13L25.8889 1.44445L24.4444 0L12.8889 11.5556L1.44444 0.11111L0 1.55555L11.4444 13L1.24176e-06 24.4444L1.44445 25.8889Z"
+                          fill="#272727"/>
+                </svg>
+            </div>
+            <div class="first-block__right-text">
+                <p class="first-block__right-black-text">Созависимость -</p>
+                <p class="first-block__right-green-text green-text">Нужно лечить!</p>
+            </div>
+        </div>
+        <div class="first-block__img-side">
+            <div class="first-block__c-container">
+                <img src="img/main/c.png" alt="decor"/>
+            </div>
+            <img src="img/main/п.png" alt="decor" class="first-block__p"/>
+        </div>
+    </div>
+    <div class="stages-block container">
+        <div class="stages-block__text-section-main">
+            <p class="stages-block__subtitle subtitle green-text mobile">Мы знаем, как помочь вам</p>
+            <p class="stages-block__subtitle subtitle green-text desk">Мы знаем как спасти вашего близкого</p>
+            <p class="stages-block__main-title h3">Этапы лечения зависимости</p>
+
+        </div>
+        <div class="stages-block__triangles">
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img src="img/common/rect1.png" class="stages-block__triangle-img" alt="detox"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Детоксикация в клинике</p>
+                    <p class="stages-block__step subtitle green-text">1 шаг</p>
+                    <p class="stages-block__text text">Очищение организма от психотропных веществ и продуктов их
+                        распада</p>
+                </div>
+            </div>
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img id="img-2" src="img/common/rect2.png" class="stages-block__triangle-img" alt="rehabilitation"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Реабилитация в центре</p>
+                    <p class="stages-block__step subtitle green-text">2 шаг</p>
+                    <p class="stages-block__text text">Восстановление здоровья, освоение рабочих навыков,
+                        ресоциализация</p>
+                </div>
+            </div>
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img src="img/common/rect3.png" alt="work"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Работа с близкими</p>
+                    <p class="stages-block__step subtitle green-text">На всех этапах</p>
+                    <p class="stages-block__text text">Бесплатные занятия с психологом, семейная терапия, лечение
+                        созависимости</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="request-block container">
+        <img src="img/common/тел.png" alt="телефон"/>
+        <p class="request-block__gray-text gray-text subtitle">Вы не одиноки, мы поможем!</p>
+        <p class="request-block__h3 h3 green-circle-around">Мне нужна помощь!</p>
+        <p class="request-block__text text text-1">Консультация длительностью до 2.5 часов.</p>
+        <p class="request-block__text text">Наши специалисты глубоко погрузятся в вашу проблему, что бы помочь вам!</p>
+        <div class="request-block__promises">
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Анонимно</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">24/7</p>
+                <p class="request-block__black-text">Круглосуточно</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Бесплатно</p>
+            </div>
+        </div>
+        <div class="request-block__double-buttons double-buttons">
+            <form class="btn__tel-form" method="POST" action=".php">
+                <input class="btn--tel btn js-phone-mask" type="tel" id="js-phone-mask" name="PHONE"
+                       placeholder="+7 ( ___ ) ___ - __ - __" required="">
+            </form>
+            <a class="request-block__button button" href="tel:899934523232">
+                8 800 000 00 00
+            </a>
+        </div>
+    </div>
+
+    <div class="swiper-container swiper-banner swiper-woman">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+                <div class="slide">
+                    <img class="swiper-img desk" src="img/common/swiper-woman.png" alt="мать"/>
+                    <div class="mobile swiper-woman__img-container">
+                        <img class=" mobile" src="img/common/woman-slider-mob.png" alt="мать"/>
+                    </div>
+                    <div class="slider__text-section">
+                        <p class="slider__subtitle subtitle green-text">Созависимость - невидимая часть болезни</p>
+                        <p class="swiper__title title h3">Лечение созависимости в центре реабилитации</p>
+                        <p class="swiper__text text">Бесплатные группы для матерей и жен зависимых проходят очно, а так
+                            же онлайн.</p>
+                        <a class="swiper__button button green-button" href="rehabs.html">Выбрать центр</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-2">Slide 2</div>
+            <div class="swiper-slide slide-3">Slide 3</div>
+            <div class="swiper-slide slide-4">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination pagination-fraction"></div>
+        <div class="swiper-fr">
+            <p id="current">01</p>
+            /
+            <p id="total">05</p>
+        </div>
+
+        <div class="line"></div>
+        <div class="dot" id="slide1"></div>
+        <div class="dot" id="slide2"></div>
+        <div class="dot" id="slide3"></div>
+        <div class="dot" id="slide4"></div>
+    </div>
+
+    <div class="swiper-container centers-swiper centers-swiper-s">
+        <p class="h3 centers__title">Реабилитационные центры</p>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-21">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide slide-22">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Центр Арзангела Гавриила г. Москва</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide slide-23">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide slide-24">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide ">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide ">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+            <div class="swiper-slide ">
+                <a class="centers-swiper__container" href="rehab.html">
+                    <div class="centers-swiper__img">
+                        <img src="img/main/Rectangle%2020%20(1).png" alt="реабилитационный центр Твой шанс">
+                    </div>
+                    <p class="centers-swiper__title title">Твой шанс</p>
+                    <p class="centers-swiper__address">г.Москва, Большая Марфинская 4 к 2</p>
+                    <p class="centers-swiper__price subtitle">80 000 руб./мес</p>
+                </a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination pagination-fraction"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="line"></div>
+        <div class="dots">
+            <div class="dot" id="slide21"></div>
+            <div class="dot" id="slide22"></div>
+            <div class="dot" id="slide23"></div>
+            <div class="dot" id="slide24"></div>
+            <a class="swiper__button button green-button" href="rehabs.html">Смотреть все</a>
+        </div>
+    </div>
+
+    <div class="services-block container">
+        <p class="services-block__subtitle gray-text subtitle">Помощь на всех этапах лечения</p>
+        <p class="services-block__main-title h3 green-circle-around circle-around ">Самые востребованные услуги</p>
+        <div class="services-section">
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img src="img/common/Group%20771.png" alt="укол"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Лечение наркомании</p>
+                    <p class="service__green-text green-text subtitle">Наркомания, алкоголизм, игромания, булимия</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img src="img/common/Group%20770.png" alt="kids"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Лечение наркомании несовершеннолетих</p>
+                    <p class="service__green-text green-text subtitle">Подростки от 15 лет.
+                        Возрастные зависимые 75+</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img src="img/common/Group%20769.png"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Снятие ломки</p>
+                    <p class="service__green-text green-text subtitle">Долгосрочный эффект экстренных мер</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img src="img/common/Group%20767.png"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Лечение алкоголизма</p>
+                    <p class="service__green-text green-text subtitle">Работа квалифицированных специалистов</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img class="doc" src="img/common/Group%20768.png"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Консультация нарколога</p>
+                    <p class="service__green-text green-text subtitle">Полное информирование и планирование лечения</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+            <a class="service" href="service.html">
+                <div class="service__img-background"><img class="stul" src="img/common/Group%20772.png"/></div>
+                <div class="service__text-section">
+                    <p class="service__title title">Группа для созависимых</p>
+                    <p class="service__green-text green-text subtitle">Онлайн или лично</p>
+                    <p class="service__details text">Подробнее</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="info-block container">
+        <div class="info-block__left-side">
+            <p class="info-block__title  title">Признаки созависимости:</p>
+            <div class="info-block__content">
+                <img src="img/common/!.svg" alt="!" class="info-block__img"/>
+                <div class="info-block__list-button">
+                    <ol class="info-block__list">
+                        <li><span class="num">01</span><span class="info-block__text">Пытаетесь скрыть зависимость близкого человека, подвергаетесь шантажу.</span>
+                        </li>
+                        <li><span class="num">02</span><span class="info-block__text">Отказываетесь от личной жизни, хобби, отдыха, развлечений.</span>
+                        </li>
+                        <li><span class="num">03</span><span class="info-block__text">Навязчивая помощь. Одержимость контролем</span>
+                        </li>
+                        <li><span class="num">04</span><span class="info-block__text">Частые конфликты в семье и на работе.</span>
+                        </li>
+                        <li><span class="num">05</span><span class="info-block__text">Чувство беспомощности и обречённости</span>
+                        </li>
+                        <li><span class="num">06</span><span
+                                class="info-block__text">Изолированность от общества.</span></li>
+                        <li><span class="num">07</span><span class="info-block__text">Навязчивые мысли. Зацикленность на ребёнке.</span>
+                        </li>
+                        <li><span class="num">08</span><span class="info-block__text">Низкая самооценка. Страх перед общественным мнением.</span>
+                        </li>
+                    </ol>
+                    <a class="info-block__button button" href="https://www.b17.ru/blog/51176/">
+                        Тест на созависимость
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="info-block__right-side">
+            <p class="info-block__title title">Что я могу сделать прямо сейчас?</p>
+            <div class="info-block__content">
+                <img src="img/common/why.svg" alt="?" class="info-block__img"/>
+                <div class="info-block__list-button">
+                    <ol class="info-block__list">
+                        <li><span class="num">01</span><span class="info-block__text">Связаться с нашими специалистами любым удобным способом и получить подробную информацию о
+                    лечении на бесплатной консультации</span>
+                        </li>
+                        <li><span class="num">02</span><span class="info-block__text">Посетить бесплатную экскурсию в реабилитационный центр, где вы сможете убедиться в безопасности
+                    предлагаемыех условий</span>
+                        </li>
+                        <li><span class="num">03</span><span class="info-block__text">Начать регулярное посещение онлайн или очных бесплатных групп для созависимых при
+                    реабилитационном центре.</span>
+                        </li>
+                        <li><span class="num">04</span><span class="info-block__text">Вы можете заказать классическую интервенцию, если ваш близкий не желает проходить курс
+                    лечения.</span>
+                        </li>
+                    </ol>
+                    <a class="info-block__button button green-button js-modal-callback" >
+                        Заказать интервенцию
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-video container">
+        <img src="img/main/video.png" alt="видео по теме" style="transform: translate(8.5rem, 10rem)"/>
+        <p class="request-block__gray-text green-text subtitle">Для созависимых</p>
+        <p class="request-block__h3 h3 green-circle-around circle-around">Видео - тренинги</p>
+        <p class="request-block__text text text-1">Мы проводим бесплатные встречи при реабилитационных центрах для
+            матерей и жен зависимых.Вы можете</p>
+        <p class="request-block__text text">Записаться на всречу у наших консультантов</p>
+        <div class="request-block__promises">
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">24/7</p>
+                <p class="request-block__black-text">Круглосуточная запись</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Анонимно</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Бесплатные встречи</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">Online</p>
+                <p class="request-block__black-text desk">/ Личные встречи</p>
+                <p class="request-block__black-text mobile">/ Очно</p>
+            </div>
+        </div>
+        <div class="swiper-container centers-swiper videos-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-31">
+                    <img class="video-background" src="img/common/videohere.png" alt="video"/>
+                    <div class="video-title">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" stroke="white" stroke-width="2"/>
+                            <path d="M12.9647 16.8345V11.0353L22.5035 16.8345L12.9647 22.6336V16.8345Z" fill="white"/>
+                        </svg>
+                        <span class="video-title__text subtitle">Созависимость, как невидимая часть болезни</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-32"><img class="video-background" src="img/common/videohere.png"
+                                                        alt="video"/>
+                    <div class="video-title">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" stroke="white" stroke-width="2"/>
+                            <path d="M12.9647 16.8345V11.0353L22.5035 16.8345L12.9647 22.6336V16.8345Z" fill="white"/>
+                        </svg>
+                        <span class="video-title__text subtitle">Созависимость, как невидимая часть болезни</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-33"><img class="video-background" src="img/common/videohere.png"
+                                                        alt="video"/>
+                    <div class="video-title">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" stroke="white" stroke-width="2"/>
+                            <path d="M12.9647 16.8345V11.0353L22.5035 16.8345L12.9647 22.6336V16.8345Z" fill="white"/>
+                        </svg>
+                        <span class="video-title__text subtitle">Созависимость, как невидимая часть болезни</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-34"><img class="video-background" src="img/common/videohere.png"
+                                                        alt="video"/>
+                    <div class="video-title">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" stroke="white" stroke-width="2"/>
+                            <path d="M12.9647 16.8345V11.0353L22.5035 16.8345L12.9647 22.6336V16.8345Z" fill="white"/>
+                        </svg>
+                        <span class="video-title__text subtitle">Созависимость, как невидимая часть болезни</span>
+                    </div>
+                </div>
+                <div class="swiper-slide "><img class="video-background" src="img/common/videohere.png" alt="video"/>
+                    <div class="video-title">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" stroke="white" stroke-width="2"/>
+                            <path d="M12.9647 16.8345V11.0353L22.5035 16.8345L12.9647 22.6336V16.8345Z" fill="white"/>
+                        </svg>
+                        <span class="video-title__text subtitle">Созависимость, как невидимая часть болезни</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination pagination-fraction"></div>
+
+            <div class="line"></div>
+            <div class="dots">
+                <div class="dot" id="slide31"></div>
+                <div class="dot" id="slide32"></div>
+                <div class="dot" id="slide33"></div>
+                <div class="dot" id="slide34"></div>
+                <a class="swiper__button button green-button" href="#">Cмотреть все</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-container swiper-banner doctor-banner doctor-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-41">
+                <div>
+
+                    <img class="swiper-img desc" src="img/common/doctor-slide.png" alt="врач"/>
+                    <div class="mobile swiper-woman__img-container">
+                        <img class=" mobile" src="img/common/doctor-slide-mob.png" alt="мать"/>
+                    </div>
+                    <div class="slider__text-section">
+                        <p class="slider__subtitle subtitle green-text">Бесплатная консультация врача-нарколога!</p>
+                        <p class="swiper__title title h3">Мы решаем самые сложные ситуации.</p>
+                        <p class="swiper__text text">Свяжитесь с наишими специалистами, и мы сопроводим вас до
+                            выбранного центра реабилитации.</p>
+                        <a class="swiper__button button green-button js-modal-callback">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-42">Slide 2</div>
+            <div class="swiper-slide slide-43">Slide 3</div>
+            <div class="swiper-slide slide-44">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination pagination-fraction"></div>
+
+        <div class="line"></div>
+        <div class="dot " id="slide41"></div>
+        <div class="dot " id="slide42"></div>
+        <div class="dot" id="slide43"></div>
+        <div class="dot" id="slide44"></div>
+    </div>
+
+
+    <div class="stages-block stages-block-2  container">
+        <div class="stages-block__text-section-main">
+            <p class="stages-block__subtitle subtitle green-text">Мы знаем как спасти вашего близкого</p>
+            <p class="stages-block__main-title h3">Этапы лечения зависимости</p>
+
+        </div>
+        <div class="stages-block__triangles">
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img src="img/common/Group%20783%20(1).png" class="stages-block__triangle-img" alt="detox"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Нарушения психики</p>
+                    <p class="stages-block__step subtitle green-text">Двойной диагноз</p>
+                    <p class="stages-block__text text">Причина того, что зависимых не отпускает болезнь, чаще всего
+                        возникающая при употреблении синтетических наркотиков: мефедрон, альфа-пвп. При таком диагнозе
+                        сильно изменяется восприятия действительности, деградирует психика.</p>
+                </div>
+            </div>
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img id="img-21" src="img/common/rect4.png" class="stages-block__triangle-img"
+                         alt="rehabilitation"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Зависимые под следствием,</p>
+                    <p class="stages-block__step subtitle green-text">Заведено уголовное дело.</p>
+                    <p class="stages-block__text text">Способствуем успешному закрытию уголовного дела. Ручаемся за
+                        зависимого. Даже в самых трудных ситуациях, когда зависимого привлекают к уголовной
+                        отвественности, выигрываем дело в пользу условного срока.</p>
+                </div>
+            </div>
+            <div class="stages-block__triangle">
+                <div class="stages-block__triangle-img">
+                    <img src="img/common/rect6.png" alt="work"/>
+                </div>
+                <div class="stages-block__text-section">
+                    <p class="stages-block__title title">Работа со всеми возрастами.</p>
+                    <p class="stages-block__step subtitle green-text">Лечение подростков.</p>
+                    <p class="stages-block__text text"> Лечим подростков от 15 лет. Курс проходит в специализированных
+                        реабилитационных центрах для подростков, либо в обычном центре для всех возрастов. Также
+                        работаем с возрастными зависимыми 75+.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper-container swiper-banner salt-banner salt-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-51">
+                <div>
+                    <div class="swiper-img-container swiper-woman__img-container">
+                        <img class="swiper-img desk" src="img/common/salt-slide.png" alt="врач"/>
+                        <img class="swiper-img mobile" src="img/common/salt-banner-mob.png" alt="врач"/>
+                    </div>
+                    <div class="slider__text-section">
+                        <p class="slider__subtitle subtitle green-text">Восстановление здоровья и психики</p>
+                        <p class="swiper__title title h3">Устраняем все последствия болезни</p>
+                        <p class="swiper__text text">Солевые наркотики вызывают нарушения в работе организма уже после
+                            первых месяцев регулярного употребления. Зависимый быстро теряет контроль над собой и
+                            деградирует. Поэтому избавление от солевой зависимости — самое длительное, до 8 месяцев
+                            реабилитации.</p>
+                        <a class="swiper__button button green-button js-modal-callback">Заявка на лечение</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-52">Slide 2</div>
+            <div class="swiper-slide slide-53">Slide 3</div>
+            <div class="swiper-slide slide-54">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination pagination-fraction"></div>
+
+        <div class="line"></div>
+        <div class="dot " id="slide51"></div>
+        <div class="dot " id="slide52"></div>
+        <div class="dot" id="slide53"></div>
+        <div class="dot" id="slide54"></div>
+    </div>
+    <div class="questions-block container">
+        <p class="questions-block__title h3"><img src="img/common/green-why.svg" class="title-img "
+                                                  alt="question"/><span>Часто задаваемые вопросы</span></p>
+        <div class="questions">
+            <div class="question">
+                <p class="question__text">Близкий человек принимает наркотики и отказывается от лечения. Что делать?</p>
+                <span class="question__answer text m-0">Зависимый человек неадекватно воспринимает реальность и может<p
+                        class="trigger-toggle-text mobile">Читать еще</p><span class="toggle-text mob-hide"> не понимать, насколько он вредит себе и окружающим, даже если это близкие люди. Единственный правильный способ — обратиться к специалистам, которые замотивируют зависимого сделать первый — самый важный — шаг навстречу здоровой жизни.</span></span>
+                <div class="question__img">
+                    <img src="img/common/defaultimg.png" alt=""/>
+                </div>
+            </div>
+            <div class="question">
+                <p class="question__text">Насколько вероятно успешное лечение от героиновой зависимости? </p>
+                <span class="question__answer text">При грамотном лечении человек может справиться с любой зависимостью. <p
+                        class="trigger-toggle-text question__answer mobile">Читать еще</p><span
+                        class="toggle-text question__answer text mob-hide">Тяжесть употребляемых наркотиков влияет лишь на длительность и классификацию терапии. Героин вызывает сильный абстинентный синдром – т.н. «ломку». Однако с ней реально справиться с помощью детоксикации организма. Под надзором врачей зависимому будет гораздо проще пережить это время, чем дома в одиночестве и без надлежащего ухода. Детоксикация полностью избавляет организм от вредных веществ и последствий употребления наркотиков, что приводит к улучшению общего самочувствия зависимого. Это позволяет в кратчайшие сроки начать процесс полного избавления от зависимости.</span></span>
+                <div class="question__img">
+                    <img src="img/common/defaultimg.png" alt=""/>
+                </div>
+            </div>
+            <div class="question">
+                <p class="question__text">Есть ли ограничения по возрасту?</p>
+                <span class="question__answer text">В нашей клинике отсутствуют подобные ограничения. <p
+                        class="trigger-toggle-text question__answer mobile">Читать еще</p><span
+                        class="toggle-text question__answer  text mob-hide">Проблемы возникают у людей абсолютно разного возраста, и мы не можем отказать им в помощи. Для каждого пациента мы подбираем индивидуальную программу, а также тип и дозировки лекарственных препаратов, учитывая особенности организма и течения болезни. Для работы с подростками до 15 лет нам необходимо согласие родителей или опекунов на реализацию медицинской программы, которое оформляется при поступлении несовершеннолетнего в клинику. После подписания соглашения присутствие родителей не требуется.</span></span>
+                <div class="question__img">
+                    <img src="img/common/defaultimg.png" alt=""/>
+                </div>
+            </div>
+            <div class="question">
+                <p class="question__text">Как понять, что у близкого передозировка?</p>
+                <span class="question__answer text">Самая очевидная ситуация, при которой необходимо немедленно<p
+                        class="trigger-toggle-text question__answer mobile">Читать еще</p><span
+                        class="toggle-text question__answer text mob-hide"> вызывать скорую помощь — если вы обнаружили человека без сознания с упаковкой наркотика (пакетиком, блистером и т.д.) Симптомы передозировки: • Тахикардия • Бледность кожи и губ • Тремор, сильная дрожь • Спутанность сознания, обморок • Отсутствие реакции зрачка на свет При наличии любого из данных признаков необходима срочная госпитализация. Передозировка грозит человеку гибелью, так что каждая минута на счету. Если вы боитесь общения с представителями официальных наркологических структур (диспансеров), то обратитесь к нам. Специалисты оперативно и безопасно осуществят все необходимые действия.</span></span>
+                <div class="question__img">
+                    <img src="img/common/defaultimg.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="request-block request-block-2 container">
+        <img src="img/common/щит.png" alt="защита"/>
+        <p class="request-block__gray-text gray-text subtitle">Консультация специалистов по химической зависимости</p>
+        <p class="request-block__h3 h3 green-circle-around">Гарантированная помощь</p>
+        <div class="request-block__promises">
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Анонимно</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">24/7</p>
+                <p class="request-block__black-text">Круглосуточно</p>
+            </div>
+            <div class="request-block__promise">
+                <p class="request-block__green-text green-text Circe-font">100%</p>
+                <p class="request-block__black-text">Бесплатно</p>
+            </div>
+        </div>
+        <div class="request-block__double-buttons double-buttons">
+            <form class="btn__tel-form" method="POST" action=".php">
+                <input class="btn--tel btn js-phone-mask" type="tel" name="PHONE"
+                       placeholder="+7 ( ___ ) ___ - __ - __" required="">
+            </form>
+            <a class="request-block__button button" href="tel:899934523232">
+                8 800 000 00 00
+            </a>
+        </div>
+    </div>
+    <div class="article-block container">
+        <p class="h2">Длинный заголовок SEO текста, или короткий</p>
+        <div class="article-block__body">
+            <p >История наркомании насчитывает не одну тысячу лет, однако, за последние
+                150 лет из-за изобретения синтетических наркотиков, проблема зависимости обрела колоссальные
+                масштабы. </p>
+            <p >Раньше наркотики были исключительно растительными: опиум – мак, гашиш-
+                конопля, кокаин – кокаиновый куст. Из-за этого чаще всего их употребление было региональным, и было
+                доступно не для всех. Хотя Москва в этом плане всегда отличалась от других городов.</p>
+            <p >Опиум стал популярен в Европе в 19-м веке как средство борьбы с
+                алкоголизмом. Позже, для лечения опиумной зависимости был изобретен морфий, после чего героин.
+                Разумеется, эти вещества не лечили зависимость, а только способствовали росту числа наркозависимых, о
+                чем тогда не знали. </p>
+            <p >Выделение наркологии в отдельную науку произошло в начале 20-го века. В
+                20-е годы впервые были описаны тяга к алкоголю и опиуму. Следующим этапом развития этой области является
+                период 1930-1970. За это время появилось описание действия различных психотропных наркотических веществ
+                и поведения человека под ними. Толчком для рецептурного лечения наркозависимости стали многочисленные
+                исследования мозга человека и принципов работы нейромедиаторов.</p>
+            <p > Кроме того, в 1971 году прошла Конвенция о психотропных веществах ООН,
+                целью которой была борьбы с психотропными веществами. Это было осуществлено с помощью создания
+                нескольких списков, которые различались строгостью контроля над веществами. Некоторые наркотики
+                (амфетамин, катинон, бупринорфин) были отнесены в списки контролируемых, до этого же они продавались
+                свободно или по рецепту. </p>
+            <p >Свободная продажа морфия, кокаина и их производных была прекращена,
+                когда 13 стран подписали международное соглашение на Международной опиумной конвенции в 1912 году.</p>
+            <p >За это время, с 1970-го года наркология развилась в отдельную
+                медицинскую дисциплину. Были изучены принципы зависимости от разных веществ, найдены способы облегчения
+                борьбы с привыканием.</p>
+            <p > На сегодняшний день лечение наркозависимости - процесс с разными
+                методиками и подходами, состоящий из нескольких этапов. </p>
+            <p class="h4">Комплексное лечение наркомании состоит в решении проблемы с
+                разных сторон. </p>
+            <p > В наркомании разделяют физическую и психическую зависимости, кроме
+                того, важны факторы, из-за которых человек начал употреблять, а также то, как зависимость повлияла на
+                состояние его здоровья и частную жизнь (работа, отношения с родственниками и близкими). </p>
+            <p >Безопасное лечение химической наркозависимости может быть осуществлено
+                только под надзором специалистов. При самостоятельном лечении или лечении нетрадиционными методами
+                наркоман рискует нанести вред своему здоровью, не избавившись при этом от привыкания. </p>
+            <p>Принудительное лечение наркомании в России запрещено, поэтому мотивацией
+                наркомана на лечение должны заняться его близкие, так как зависимый человек часто не понимает насколько
+                серьезно он подсел.</p>
+            <p>Если наркозависимый решил бросить, то первым делом ему стоит обратиться
+                ко врачу для проведения диагностики, так как она даст ему информацию о том, в каком состоянии находится
+                его организм. После этого лучше всего обратиться к наркологу, который пропишет курс лечения. На
+                сегодняшний день существует много методов лечения наркозависимости. На нашем портале мы писали о
+                детоксикации, самостоятельном лечении, а также упоминали о роли психотерапии и методиках лечения
+                психологической зависимости. </p>
+            <p >Этапы лечения наркомании</p>
+            <p >Первый этап избавления от привыкания к любому веществу – прекращение его
+                употребления. Это может быть сделано самостоятельно или же обратившись к наркологу из государственного
+                или частного учреждения.</p>
+            <p>Лечение ломки каждого наркотика изучено, и есть проверенные способы
+                облегчить ее течение. Базовая процедура детоксикации (выведения токсического вещества из организма) –
+                капельница. Она необходима, чтобы очистить кровь от токсического вещества. Для каждого вещества
+                существуют разные способы лечения.</p>
+            <p >Второй этап это поддерживающее лечение. На этом этапе тело наркомана
+                полностью очистилось от наркотика, и его физическое состояние находится в норме. Однако, нейромедиаторы
+                или рецепторы, на которые воздействовал наркотик, не восстанавливаются за несколько дней. Процесс их
+                восстановления в некоторых случаях может занять от нескольких месяцев до года. В зависимости от вещества
+                человеку на этом этапе прописывают медикаменты, помогающие ему справиться с симптомами неправильной
+                работы рецепторов и нейромедиаторов. Также, в этот период человек испытывает сильную тягу к наркотику,
+                поэтому на втором этапе лечения рекомендуется подключить один из видов психотерапии. </p>
+            <p>Третий этап лечения – ремиссия и ресоциализация. Наркоман уже поборол
+                тягу к веществу и не употребляет его от месяца или более. Главная помощь здесь – возвращение человека к
+                нормальной жизни. Человеку нужно найти работу и хобби, наладить условия жизни и отношения с
+                близкими.</p>
+            <p >Особенности лечения от разных веществ</p>
+            <p class="h4">Для лечения опийной наркомании используют:</p>
+            <p >УБОД – ультрабыстрая опиоидная детоксикация. Метод, при котором человеку под
+                анестезией или без вводят антагонист опиоидных рецепторов налтрексон, тем самым выводя опиат из
+                организма за 4-8 часов. Налтрексон после процедуры будет действовать еще 2-3 дня, не давая наркоману при
+                употреблении испытать эйфорию.</p>
+            <p >Средства купирующие зависимость</p>
+            <p> Подшивка налтрексона или налоксона. Под кожу вшивают блокатор
+                эндорфиновых рецепторов налтрексон или налоксон на 1-2-3-6 месяцев. После данной процедуры прием опиатов
+                не будет вызывать эйфории, вместо этого начнется абстинентный синдром с тошнотой и рвотой, болью в
+                мышцах и суставах, возможна также дыхательная недостаточность.</p>
+        </div>
+    </div>
+    <footer class="footer-block">
+    <div class="footer-top">
+        <div class="footer-top__col">
+            <p class="footer-top__title title">Информация</p>
+            <p><a>Реабилитационные центры</a></p>
+            <p><a>Группы взаимопомощи</a></p>
+            <p><a>Публикации</a></p>
+            <p><a>О портале</a></p>
+        </div>
+        <div class="footer-top__col">
+            <p class="footer-top__title title">Наркомания</p>
+            <p><a>Реабилитация наркозависимых</a></p>
+            <p><a>Амбулаторное лечение наркомании</a></p>
+            <p><a>Дечение наркомании несовершеннолетних</a></p>
+            <p><a>Снятие ломки</a></p>
+            <p><a>Детоксикация от наркотиков</a></p>
+            <p><a>УБОД</a></p>
+            <p><a>Нарколог на дом</a></p>
+            <p><a>Наркологическая помощь</a></p>
+            <p><a>Консульнация нарколога</a></p>
+            <p><a>Группы для созависимых</a></p>
+        </div>
+        <div class="footer-top__col">
+            <p class="footer-top__title title">Алкоголизм</p>
+            <p><a>Вывод из запоя</a></p>
+            <p><a>вывод из запоя в клинике</a></p>
+            <p><a>Принудительный вывод из запоя</a></p>
+            <p><a>Капельница от запоя</a></p>
+            <p><a>Кодирование от алкоголизма в клинике</a></p>
+            <p><a>Кодирование от алкоголизма на дому</a></p>
+        </div>
+        <div class="footer-top__col">
+            <p class="footer-top__title title">Игровая зависимость</p>
+            <p><a>Игровая зависимость</a></p>
+            <p><a>Интернет зависимость</a></p>
+
+        </div>
+        <div class="footer-top__col">
+            <p class="footer-top__title title">Лечение</p>
+            <p class="top"><a>Лечение алкоголизма</a></p>
+            <p><a>Лечение алкоголизма у подростков</a></p>
+            <p class="top"><a>Амбулаторное лечение алкоголизма</a></p>
+            <p><a>Лечение алкоголизма в рехабах</a></p>
+            <p class="top"><a>Лечение алкоголизма в стационаре</a></p>
+            <p><a>Дечение алкоголизма принудительно</a></p>
+            <p class="top"><a>Лечение женского алкоголизма</a></p>
+            <p><a>Лечение пивного алкоголизма</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a class="header__logo">
+            <img src="img/common/logo.svg" alt="logo"/>
+            <div class="logo__text">
+                <p class="logo__title">Ты не одна</p>
+                <span class="logo__subtitle">Портал помощи матерям и женам зависимых</span>
+            </div>
+        </a>
+        <div class="header__phone bottom__phone">
+            <a class="header__phone-number" href="tel:899934523232">8 0000 000 00 00</a>
+            <span class="header__phone-description">Анонимная, бесплатная помощь 24/7</span>
+        </div>
+    </div>
+    <div class="modal modal-callback modal-call">
+        <div class="modal-callback__title  access-mod ">
+            Ваша заявка принята!
+        </div>
+        <p class="green-text subtitle">Получите помощь</p>
+        <p class="title  h3 modal-callback__title">Oставить анонимную заявку</p>
+        <p class="text">Заявки принимаются бесплатно и круглосуточно.</p>
+        <p class="text">Мы свяжемся с вами в течение дня</p>
+        <form class="modal-form">
+            <input placeholder="+7 (__ __ __) __ __ - __ __ - __ __" class="modal__input-phone"/>
+            <textarea placeholder="Опишите проблему" class="mobile"></textarea>
+            <input placeholder="Опишите проблему" class="desk"/>
+            <a class="button green-button access-click">Отправить</a>
+        </form>
+        <svg class="modal__close" width="26" height="26" viewBox="0 0 26 26" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.44445 25.8889L12.8889 14.4444L24.4444 26L25.8889 24.5556L14.3333 13L25.8889 1.44445L24.4444 0L12.8889 11.5556L1.44444 0.11111L0 1.55555L11.4444 13L1.24176e-06 24.4444L1.44445 25.8889Z"
+                  fill="#272727"/>
+        </svg>
+    </div>
+    <div class="modal modal-callback modal-comment">
+
+        <p class="green-text subtitle">Нам важно ваше мнение!</p>
+        <p class="title  h3 modal-callback__title">Oставить отзыв</p>
+        <p class="text">Спасибо за обратную связь! Вы помогаете нам улучшить качество услуг</p>
+
+        <form class=" comment-modal-form">
+            <div class="top-side">
+                <input class="top" placeholder="Ваше имя"/>
+                <div class="select-container top">
+                    <select>
+                        <option value="1" selected>Солевая зависимость</option>
+                        <option value="2">Солевая зависимость</option>
+                        <option value="3">Солевая зависимость</option>
+
+                    </select>
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.4707 -7.03335e-05L13.5418 -7.02492e-05C14.4327 -7.02492e-05 14.8788 1.07707 14.2489 1.70704L8.17781 7.7781C7.78729 8.16863 7.15412 8.16863 6.7636 7.7781L0.692529 1.70704C0.0625637 1.07707 0.50873 -7.02492e-05 1.39964 -7.01649e-05L7.4707 -7.03335e-05Z"
+                              fill="#999999"/>
+                    </svg>
+                </div>
+                <input class="top" placeholder="Сколько времени употреблял"/>
+            </div>
+            <div class="bottom-side">
+                <input class="comment-input desk" placeholder="Отзыв"/>
+                <textarea class="mobile" placeholder="Отзыв"></textarea>
+                <a class="button green-button access-click">Отправить</a>
+            </div>
+        </form>
+        <svg class="modal__close" width="26" height="26" viewBox="0 0 26 26" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.44445 25.8889L12.8889 14.4444L24.4444 26L25.8889 24.5556L14.3333 13L25.8889 1.44445L24.4444 0L12.8889 11.5556L1.44444 0.11111L0 1.55555L11.4444 13L1.24176e-06 24.4444L1.44445 25.8889Z"
+                  fill="#272727"/>
+        </svg>
+    </div>
+</footer>
+
+</main>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
